@@ -13,7 +13,7 @@
            <a href="/Kontak" class="text-grey-700 hover:text-green-600">Kontak</a>
         </nav>
 
-        <a href="/Donasi" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+        <a href="{{ route('donation.create') }}" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
             Donasi Sekarang
         </a>
 

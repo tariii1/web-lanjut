@@ -7,6 +7,7 @@ use App\Http\Controllers\KontakController;
 use App\Http\Controllers\DonasiController;
 use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\DocumentationFileController;
+use App\Http\Controllers\FeedController;
 
 
 Route::get('/', [HomeController::class, 'index']);
@@ -19,5 +20,8 @@ Route::resource('campaign', CampaignController::class);
 
 Route::get('/documentations', [DocumentationFileController::class, 'index']);
 Route::post('/documentations', [DocumentationFileController::class, 'store']);
+
+Route::get('/feeds', [FeedController::class, 'index']);
+
 
 
